@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nagalakshmi Collections - Contact</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f7f4f1;
+}
+
+/* HEADER */
+
+header{
+    background:white;
+    padding:15px 40px;
+    font-weight:bold;
+    box-shadow:0 2px 5px rgba(0,0,0,0.1);
+}
+
+.Navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+/* LOGO */
+
+.logo h1{
+    color:goldenrod;
+    font-size:32px;
+    font-family:monospace;
+}
+
+.logo p{
+    color:goldenrod;
+    letter-spacing:4px;
+    font-size:12px;
+}
+
+/* NAVBAR */
+
+.Navbar ul{
+    display:flex;
+    list-style:none;
+    gap:30px;
+    align-items:center;
+}
+
+.Navbar ul li a{
+    text-decoration:none;
+    color:black;
+    font-size:14px;
+}
+
+.Navbar ul li a:hover{
+    color:palevioletred;
+}
+
+/* BUTTON */
+
+.button{
+    background:palevioletred;
+    padding:10px 22px;
+    border:none;
+    border-radius:25px;
+}
+
+.button a{
+    color:white;
+    text-decoration:none;
+}
+
+/* CONTACT TOP */
+
+.contact-top{
+    width:90%;
+    margin:50px auto;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:35px;
+}
+
+/* CARD */
+
+.card{
+    background:white;
+    padding:20px;
+    text-align:center;
+    border-radius:20px;
+    box-shadow:0 4px 15px rgba(0,0,0,0.08);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+/* ICON */
+
+.icon{
+    width:80px;
+    height:80px;
+    margin:auto;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:32px;
+    color:white;
+    margin-bottom:25px;
+}
+
+/* ICON COLORS */
+
+.location{
+    background:linear-gradient(to bottom,#ff9d2f,#b31b00);
+}
+
+.phone{
+    background:linear-gradient(to bottom,#ff9d2f,#b31b00);
+}
+
+.whatsapp{
+    background:#25D366;
+}
+
+.instagram{
+    background:linear-gradient(
+    45deg,
+    #f9ce34,
+    #ee2a7b,
+    #6228d7
+    );
+}
+
+/* CARD TEXT */
+
+.card h2{
+    margin-bottom:20px;
+    color:#222;
+}
+
+.card p{
+    color:gray;
+    line-height:30px;
+}
+
+/* DIRECTION BUTTON */
+
+.direction-btn{
+    display:inline-block;
+    margin-top:20px;
+    color:#c98a00;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+/* WHATSAPP BUTTON */
+
+.chat-btn{
+    margin-top:25px;
+    display:inline-block;
+    background:#25D366;
+    color:white;
+    padding:14px 35px;
+    border-radius:30px;
+    text-decoration:none;
+    font-weight:bold;
+    box-shadow:0 6px 15px rgba(37,211,102,0.3);
+}
+
+/* INSTAGRAM BUTTON */
+
+.insta-btn{
+    margin-top:25px;
+    display:inline-block;
+    background:linear-gradient(
+    45deg,
+    #f9ce34,
+    #ee2a7b,
+    #6228d7
+    );
+    color:white;
+    padding:14px 35px;
+    border-radius:30px;
+    text-decoration:none;
+    font-weight:bold;
+    box-shadow:0 6px 15px rgba(238,42,123,0.3);
+}
+
+.insta-btn i{
+    margin-right:8px;
+}
+
+/* BOTTOM SECTION */
+
+.bottom{
+    width:90%;
+    margin:60px auto;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:40px;
+    align-items:center;
+}
+
+/* HOURS */
+
+.hours h1{
+    color:darkred;
+    margin-bottom:20px;
+}
+
+.line{
+    width:70px;
+    height:4px;
+    background:#c25b00;
+    margin-bottom:25px;
+}
+
+.hours p{
+    color:gray;
+    line-height:28px;
+    margin-bottom:30px;
+}
+
+/* TIME BOX */
+
+.time-box{
+    background:white;
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:0 4px 12px rgba(0,0,0,0.08);
+}
+
+.row{
+    display:flex;
+    justify-content:space-between;
+    padding:25px 30px;
+    border-bottom:1px solid #eee;
+}
+
+.row:last-child{
+    border-bottom:none;
+}
+
+.day{
+    font-weight:bold;
+}
+
+.time{
+    background:#dff5e5;
+    color:#159447;
+    padding:10px 18px;
+    border-radius:20px;
+    font-size:14px;
+}
+
+.yellow{
+    background:#fff1c9;
+    color:#d19100;
+}
+
+/* MAP */
+
+.map iframe{
+    width:100%;
+    height:430px;
+    border:none;
+    border-radius:20px;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:900px){
+
+    .bottom{
+        grid-template-columns:1fr;
+    }
+
+    .Navbar{
+        flex-direction:column;
+        gap:20px;
+    }
+
+    .Navbar ul{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+
+<header>
+
+<div class="Navbar">
+
+    <div class="logo">
+        <h1>NAGALAKSHMI</h1>
+        <p>COLLECTIONS</p>
+    </div>
+
+    <ul>
+        <li><a href="website.html">HOME</a></li>
+        <li><a href="menu.html">MENU</a></li>
+        <li><a href="aboutweb.html">ABOUT</a></li>
+        <li><a href="services.html">SERVICES</a></li>
+        <li> <button class="button"><a href="contact.html" style="text-decoration: none; color: white;">CONTACT US</button></li></a>
+
+
+    </ul>
+
+</div>
+
+</header>
+
+<!-- CONTACT CARDS -->
+
+<section class="contact-top">
+
+    <!-- LOCATION -->
+
+    <div class="card">
+
+        <div class="icon location">
+            <i class="fa-solid fa-location-dot"></i>
+        </div>
+
+        <h2>Visit Our Shop</h2>
+
+        <p>
+            Nagalakshmi Collections<br>
+            Madurai, Tamil Nadu
+        </p>
+
+    
+
+    </div>
+
+    <!-- PHONE -->
+
+    <div class="card">
+
+        <div class="icon phone">
+            <i class="fa-solid fa-phone"></i>
+        </div>
+
+        <h2>Call Us</h2>
+
+        <p>
+            +91 9894902519<br>
+            +91 9894346119
+        </p>
+
+        <p style="margin-top:15px;">
+            Open all 7 days • 9AM - 9PM
+        </p>
+
+    </div>
+
+    <!-- WHATSAPP -->
+
+    <div class="card">
+
+        <div class="icon whatsapp">
+            <i class="fa-brands fa-whatsapp"></i>
+        </div>
+
+        <h2>WhatsApp Us</h2>
+
+        <p>
+            Quick replies for orders,<br>
+            measurements, and enquiries
+        </p>
+        <a href="https://wa.me/919894902519?text=Hello%20Nagalakshmi%20Collections" class="chat-btn" target="_blank">
+
+    <i class="fa-brands fa-whatsapp"></i>
+    Chat on WhatsApp
+
+</a>
+      
+
+    </div>
+
+    <!-- INSTAGRAM -->
+
+    <div class="card">
+
+        <div class="icon instagram">
+            <i class="fa-brands fa-instagram"></i>
+        </div>
+
+        <h2>Instagram Us</h2>
+
+        <p>
+            Follow us for latest collections,<br>
+            blouse designs, and updates
+        </p>
+
+        <a href="https://www.instagram.com/gopal65340/" class="insta-btn" target="_blank">
+
+            <i class="fa-brands fa-instagram"></i>
+            Follow Now
+
+        </a>
+
+    </div>
+
+</section>
+
+<!-- BUSINESS HOURS + MAP -->
+
+<section class="bottom">
+
+    <!-- HOURS -->
+
+    <div class="hours">
+
+        <h1>Business Hours</h1>
+
+        <div class="line"></div>
+
+        <p>
+            We are open all seven days. Walk in anytime during working hours
+            for tailoring consultations and shopping.
+        </p>
+
+        <div class="time-box">
+
+            <div class="row">
+                <div class="day">Monday - Saturday</div>
+                <div class="time">9:00 AM - 9:00 PM</div>
+            </div>
+
+            <div class="row">
+                <div class="day">Sunday</div>
+                <div class="time yellow">10:00 AM - 1:00 PM</div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- MAP -->
+
+    <div class="map">
+
+        <iframe 
+        src="https://www.google.com/maps/embed?pb=!4v1778769144994!6m8!1m7!1sSi3GfcxgzD1fapIzR_W92A!2m2!1d9.94666109486257!2d78.11992250612155!3f159.23277!4f0!5f0.7820865974627469"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+
+    </div>
+
+</section>
+
+</body>
+</html>

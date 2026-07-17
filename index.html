@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nagalakshmi Collections</title>
+
+<style>
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+    font-family:'Lucida Sans', Geneva, Verdana, sans-serif;
+}
+
+body{
+    background:#fff;
+}
+
+/* HEADER */
+
+header{
+    background:#ffffff;
+    padding:10px 30px;
+    font-weight:bold;
+    box-shadow:0 2px 10px rgba(0,0,0,0.1);
+}
+
+.Navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+/* LOGO */
+
+.logo h1{
+    font-size:32px;
+    letter-spacing:2px;
+    font-family:monospace;
+    color:goldenrod;
+}
+
+.logo p{
+    font-size:12px;
+    letter-spacing:4px;
+    color:goldenrod;
+}
+
+/* NAVBAR */
+
+.Navbar ul{
+    display:flex;
+    list-style:none;
+    gap:35px;
+    align-items:center;
+}
+
+.Navbar ul li a{
+    text-decoration:none;
+    color:black;
+    font-size:14px;
+    transition:0.3s;
+}
+
+.Navbar ul li a:hover{
+    color:hotpink;
+}
+
+/* BUTTON */
+
+.button{
+    background-color:palevioletred;
+    color:white;
+    padding:10px 22px;
+    border-radius:25px;
+    border:none;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+.button a{
+    color:white;
+    text-decoration:none;
+}
+
+.button:hover{
+    background-color:hotpink;
+}
+
+/* HERO SECTION */
+
+.hero{
+    width:100%;
+    height:90vh;
+    overflow:hidden;
+    position:relative;
+    margin-top:15px;
+}
+
+.hero img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    
+}
+
+/* CONTENT */
+
+.content{
+    position:absolute;
+    top:50%;
+    left:8%;
+    transform:translateY(-50%);
+    color:white;
+}
+
+.content h2{
+    font-size:55px;
+    margin-bottom:10px;
+}
+
+.content p{
+    font-size:18px;
+    margin-bottom:25px;
+}
+
+/* SHOP BUTTON */
+
+.shopbtn{
+    padding:12px 28px;
+    border:none;
+    border-radius:30px;
+    background-color:palevioletred;
+    cursor:pointer;
+}
+
+.shopbtn a{
+    text-decoration:none;
+    color:white;
+    font-size:16px;
+}
+
+.shopbtn:hover{
+    background-color:hotpink;
+}
+
+/* BUSINESS HOURS + MAP */
+
+.bottom{
+    width:90%;
+    margin:60px auto;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:40px;
+    align-items:center;
+}
+
+/* HOURS */
+
+.hours h1{
+    color:darkred;
+    margin-bottom:20px;
+}
+
+.line{
+    width:70px;
+    height:4px;
+    background:#c25b00;
+    margin-bottom:25px;
+}
+
+.hours p{
+    color:gray;
+    line-height:28px;
+    margin-bottom:30px;
+}
+
+/* TIME BOX */
+
+.time-box{
+    background:#fff5f7;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 3px 10px rgba(0,0,0,0.1);
+}
+
+.row{
+    display:flex;
+    justify-content:space-between;
+    margin-bottom:15px;
+    font-size:16px;
+}
+
+.day{
+    font-weight:bold;
+}
+
+.time{
+    color:#444;
+}
+
+.yellow{
+    color:orange;
+    font-weight:bold;
+}
+
+/* MAP */
+
+.map iframe{
+    width:100%;
+    height:350px;
+    border-radius:10px;
+}
+
+/* ABOUT SECTION */
+
+.about{
+    width:90%;
+    margin:auto;
+    padding:70px 0;
+    text-align:center;
+}
+
+.about h1{
+    font-size:50px;
+    color:black;
+    margin-bottom:15px;
+}
+
+.about .line{
+    width:120px;
+    height:4px;
+    background:goldenrod;
+    margin:auto;
+    border-radius:10px;
+    margin-bottom:20px;
+}
+
+.about p{
+    color:#555;
+    line-height:30px;
+    font-size:18px;
+}
+
+.about p span{
+    font-weight:bold;
+    color:black;
+}
+
+/* ABOUT BOX */
+
+.about-box{
+    margin-top:50px;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+}
+
+/* CARD */
+
+.card{
+    background:white;
+    padding:30px 20px;
+    border-radius:15px;
+    box-shadow:0 3px 12px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.top img{
+    width:80px;
+    margin-bottom:20px;
+}
+
+.bottom-card h2{
+    margin-bottom:15px;
+    color:darkred;
+}
+
+.bottom-card p{
+    font-size:15px;
+    line-height:25px;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+    .Navbar{
+        flex-direction:column;
+        gap:20px;
+    }
+
+    .Navbar ul{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .content h2{
+        font-size:35px;
+    }
+
+    .content p{
+        font-size:15px;
+    }
+
+    .bottom{
+        grid-template-columns:1fr;
+    }
+
+    .about-box{
+        grid-template-columns:1fr;
+    }
+
+    .about h1{
+        font-size:35px;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+
+<header>
+
+<div class="Navbar">
+
+    <div class="logo">
+        <h1>NAGALAKSHMI</h1>
+        <p>COLLECTIONS</p>
+    </div>
+
+    <ul>
+        <li><a href="website.html">HOME</a></li>
+        <li><a href="menu.html">MENU</a></li>
+        <li><a href="aboutweb.html">ABOUT</a></li>
+        <li><a href="services.html">SERVICES</a></li>
+
+         <li> <button class="button"><a href="contact.html" style="text-decoration: none; color: white;">CONTACT US</button></li></a>
+
+    </ul>
+
+</div>
+
+</header>
+
+<!-- HERO SECTION -->
+
+<div class="hero">
+
+    <img src="img/collection.png" alt="Nagalakshmi Collections">
+
+    <div class="content">
+
+        <h2>Elegant Ladies Tailoring</h2>
+
+        <p>
+            Trendy Designs • Perfect Stitching • Premium Collections
+        </p>
+
+        <button class="shopbtn">
+            <a href="menu.html">Explore Now</a>
+        </button>
+
+    </div>
+
+</div>
+
+
+
+<!-- ABOUT SECTION -->
+
+<section class="about">
+
+    <h1>Why Choose Nagalakshmi Collections?</h1>
+
+    <div class="line"></div>
+
+    <p>
+        <span>Your Style, Our Responsibility</span><br>
+        21+ years of tailoring experience, premium stitching quality and customer satisfaction.<br>
+        “Your happiness is our success.”
+    </p>
+
+    <div class="about-box">
+
+        <!-- CARD 1 -->
+
+        <div class="card">
+
+            <div class="top">
+                <img src="img/sewing.png" alt="">
+            </div>
+
+            <div class="bottom-card">
+
+                <h2>Perfect Stitching</h2>
+
+                <p>
+                    We stitch every dress with detailed measurements for the most
+                    <b>perfect fitting</b> and elegant look.
+                </p>
+
+            </div>
+
+        </div>
+
+        <!-- CARD 2 -->
+
+        <div class="card">
+
+            <div class="top">
+                <img src="img/certification.svg" alt="">
+            </div>
+
+            <div class="bottom-card">
+
+                <h2>Quality Materials</h2>
+
+                <p>
+                    We use premium fabrics and
+                    <b>high quality materials</b> for comfortable and stylish collections.
+                </p>
+
+            </div>
+
+        </div>
+
+        <!-- CARD 3 -->
+
+        <div class="card">
+
+            <div class="top">
+                <img src="img/woman-clothes.png" alt="">
+            </div>
+
+            <div class="bottom-card">
+
+                <h2>Custom Designs</h2>
+
+                <p>
+                    Chudi, blouse, uniform and kids wear stitching with
+                    <b>custom designs</b> based on your choice.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- BUSINESS HOURS + MAP -->
+
+<section class="bottom">
+
+    <!-- HOURS -->
+
+    <div class="hours">
+
+        <h1>Business Hours</h1>
+
+        <div class="line"></div>
+
+        <p>
+            We are open all seven days. Walk in anytime during working hours
+            for tailoring consultations and shopping.
+        </p>
+
+        <div class="time-box">
+
+            <div class="row">
+                <div class="day">Monday - Saturday</div>
+                <div class="time">9:00 AM - 9:00 PM</div>
+            </div>
+
+            <div class="row">
+                <div class="day">Sunday</div>
+                <div class="time yellow">10:00 AM - 1:00 PM</div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- MAP -->
+
+    <div class="map">
+
+        <iframe 
+        src="https://www.google.com/maps/embed?pb=!4v1778769144994!6m8!1m7!1sSi3GfcxgzD1fapIzR_W92A!2m2!1d9.94666109486257!2d78.11992250612155!3f159.23277!4f0!5f0.7820865974627469"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy">
+        </iframe>
+
+    </div>
+
+</section>
+
+</section>
+
+</body>
+</html>

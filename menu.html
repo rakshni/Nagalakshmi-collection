@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nagalakshmi Tailor</title>
+
+<style>
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', Geneva, Verdana, sans-serif;
+}
+
+/* HEADER */
+
+header{
+    background: linear-gradient(to right,#ffffff,#ffffff);
+    padding: 10px 30px;
+    box-shadow: 0px 2px 10px rgba(0,0,0,0.1);
+}
+
+.Navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* LOGO */
+
+.logo{
+    line-height: 28px;
+}
+
+.logo h1{
+    font-size: 32px;
+    letter-spacing: 2px;
+    font-family: monospace;
+    color: goldenrod;
+}
+
+.logo p{
+    font-size: 12px;
+    letter-spacing: 4px;
+    color: goldenrod;
+}
+
+/* NAVBAR */
+
+.Navbar ul{
+    display: flex;
+    list-style: none;
+    gap: 35px;
+    align-items: center;
+}
+
+.Navbar ul li{
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.Navbar ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.Navbar ul li a:hover{
+    color: palevioletred;
+}
+
+/* BUTTON */
+
+.button{
+    background-color: palevioletred;
+    color: white;
+    padding: 10px 22px;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.button:hover{
+    background-color: hotpink;
+}
+
+/* HERO IMAGE SECTION */
+
+.hero{
+    width: 100%;
+    height: 90vh;
+    overflow: hidden;
+    position: relative;
+    margin-top: 15px;
+}
+
+.hero img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* TEXT OVER IMAGE */
+
+.content{
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    transform: translateY(-50%);
+    color: white;
+}
+
+.content h2{
+    font-size: 55px;
+    margin-bottom: 10px;
+}
+
+.content p{
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.shopbtn{
+    padding: 12px 28px;
+    border: none;
+    border-radius: 30px;
+    background-color: palevioletred;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.shopbtn:hover{
+    background-color: hotpink;
+}
+
+/* MENU SECTION */
+
+.menu{
+    width: 90%;
+    margin: auto;
+    padding: 60px 0;
+}
+
+.menu-title{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.menu-title h1{
+    color: goldenrod;
+    font-size: 45px;
+}
+
+.menu-title p{
+    margin-top: 10px;
+    color: gray;
+}
+
+.menu-box{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    gap: 30px;
+}
+
+.card{
+    background-color: white;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.card:hover{
+    transform: translateY(-10px);
+}
+
+.card img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.card h2{
+    text-align: center;
+    padding-top: 20px;
+    color: goldenrod;
+}
+
+.card ul{
+    list-style: none;
+    padding: 20px;
+}
+
+.card ul li{
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+    color: #444;
+}
+
+/* FOOTER */
+
+footer{
+    background-color: #111;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<div class="Navbar">
+
+    <div class="logo">
+        <h1>NAGALAKSHMI</h1>
+        <p>COLLECTIONS</p>
+    </div>
+
+    <ul>
+        <li><a href="website.html">HOME</a></li>
+        <li><a href="menu.html">MENU</a></li>
+        <li><a href="aboutweb.html">ABOUT</a></li>
+        <li><a href="services.html">SERVICES</a></li>
+        <li> <button class="button"><a href="contact.html" style="text-decoration: none; color: white;">CONTACT US</button></li></a>
+    </ul>
+
+</div>
+
+</header>
+
+
+
+<!-- MENU SECTION -->
+
+<section class="menu">
+
+<div class="menu-title">
+    <h1>Our Collections</h1>
+    <p>Stylish Stitching Designs For Every Occasion</p>
+</div>
+
+<div class="menu-box">
+
+    <div class="card">
+        <img src="img/chudi.png" height="200px" >
+        <h2>Chudi Models</h2>
+
+        <ul>
+            <li>Anarkali Chudi</li>
+            <li>Umbrella Chudi</li>
+            <li>Party Wear Chudi</li>
+            <li>Princess Cut Chudi</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <img src="img/blouse.png">
+        <h2>Blouse Designs</h2>
+
+        <ul>
+            <li>Boat Neck Blouse</li>
+            <li>Maggam Work</li>
+            <li>Patch Work</li>
+            <li>Wedding Blouse</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <img src="img/kids.png">
+        <h2>Kids Collections</h2>
+
+        <ul>
+            <li>Kids Frock</li>
+            <li>Pattu Pavadai</li>
+            <li>Birthday Dress</li>
+            <li>Fancy Wear</li>
+        </ul>
+    </div>
+
+   <div class="card">
+    <img src="https://jisboutique.com/cdn/shop/files/6_8d2f2a6f-b6b5-4fd0-8dcd-250a38d4813f.png?v=1737525792">
+    <h2>Nighty Collections</h2>
+
+    <ul>
+        <li>Cotton Nighty</li>
+        <li>Printed Nighty</li>
+        <li>Feeding Nighty</li>
+        <li>Fancy Nighty</li>
+    </ul>
+</div>
+
+<div class="card">
+    <img src="img/uniform.png">
+    <h2>Uniform Collections</h2>
+
+    <ul>
+        <li>School Uniform</li>
+        <li>College Uniform</li>
+        <li>Office Uniform</li>
+        <li>Hospital Uniform</li>
+    </ul>
+</div>
+
+<div class="card">
+    <img src="https://threadcounts.in/cdn/shop/files/3_4_4cbd7dca-ca62-4451-ae5b-e5c692de36ff.jpg?v=1713567147&width=2048">
+    
+    <h2>Frock</h2>
+
+    <ul>
+      
+        <li>Cotton Casual Frock</li>
+        <li>Printed Long Frock</li>
+        <li>Sleeveless Frock</li> 
+        <li>Comfort Daily Wear</li>
+    </ul>
+</div>
+</div>
+
+</section>
+
+
+
+</body>
+</html>
